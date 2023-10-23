@@ -37,6 +37,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -45,10 +46,11 @@ h3 {
   font-weight: 900;
   margin: 0;
   text-transform: uppercase;
+  line-height: 1;
 }
 
 h1 {
-  font-size: var(--xl);
+  font-size: var(--h1);
 }
 
 h2 {
@@ -59,6 +61,97 @@ h3 {
   font-size: var(--h3);
 }
 
+h4 {
+  text-transform: uppercase;
+  color: var(--bluegrey);
+  font-weight: 600;
+}
+
 img {
   max-width: 100%;
+}
+
+.img {
+  margin-left: 1em;
+  border-radius: 30px;
+}
+
+.images {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 1.5em;
+}
+
+.btn {
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1em;
+  font-size: var(--small);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.secondary {
+  background-color: var(--lightblue);
+}
+
+.primary:hover {
+  background-color: var(--primary-light);
+}
+
+.secondary:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em;
+  max-width: 1200px;
+}
+
+.wrapper {
+  margin: 3em 1em;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 350px;
+}
+
+p {
+  font-size: var(--h6);
+  color: #7b8bad;
+  margin: 2em 0;
+}
+
+main {
+  margin: 5em 1em;
+  text-align: center;
+}
+
+.icon-container {
+    background-color: var(--primary);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+  text-align: center;
+  color: var(--bluegrey);
 }
