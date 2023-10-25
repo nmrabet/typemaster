@@ -155,6 +155,10 @@ main {
   justify-content: center;
 }
 
+.presentation {
+  margin: 3em 0;
+}
+
 .thin {
   font-weight: lighter;
 }
@@ -180,7 +184,6 @@ footer {
     flex-direction: row;
     text-align: left;
     gap: 2em;
-    margin-bottom: 3rem;
   }
 
   .row {
@@ -211,8 +214,12 @@ footer {
   .row {
     flex-wrap: nowrap;
   }
+
   .details-container {
     margin: 5em 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
   }
 
   h3 {
